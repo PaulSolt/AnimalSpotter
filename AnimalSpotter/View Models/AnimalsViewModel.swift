@@ -10,4 +10,13 @@ import Foundation
 
 final class AnimalsViewModel {
     var animalNames = [String]()
+    var shouldPresentLoginViewController: Bool {
+        APIController.bearer == nil
+    }
+    
+    private let apiController: APIController
+    
+    init(apiController: APIController = APIController()) {
+        self.apiController = apiController
+    }
 }

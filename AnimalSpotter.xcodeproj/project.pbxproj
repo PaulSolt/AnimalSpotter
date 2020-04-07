@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2584CC9243CDE95001D1234 /* Bearer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2584CC8243CDE95001D1234 /* Bearer.swift */; };
+		D2584CCB243CDED2001D1234 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2584CCA243CDED2001D1234 /* User.swift */; };
+		D2584CCD243CED74001D1234 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2584CCC243CED74001D1234 /* LoginViewModel.swift */; };
 		D2C88E0124391A8E0072EAD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C88E0024391A8E0072EAD2 /* AppDelegate.swift */; };
 		D2C88E0324391A8E0072EAD2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C88E0224391A8E0072EAD2 /* SceneDelegate.swift */; };
 		D2C88E0524391A8E0072EAD2 /* AnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C88E0424391A8E0072EAD2 /* AnimalsViewController.swift */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D2584CC8243CDE95001D1234 /* Bearer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bearer.swift; sourceTree = "<group>"; };
+		D2584CCA243CDED2001D1234 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D2584CCC243CED74001D1234 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		D2C88DFD24391A8E0072EAD2 /* AnimalSpotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalSpotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C88E0024391A8E0072EAD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2C88E0224391A8E0072EAD2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				D2C88E1E24392FD60072EAD2 /* Animal.swift */,
+				D2584CC8243CDE95001D1234 /* Bearer.swift */,
+				D2584CCA243CDED2001D1234 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -108,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				D2C88E1C24392F470072EAD2 /* AnimalsViewModel.swift */,
+				D2584CCC243CED74001D1234 /* LoginViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -211,11 +220,14 @@
 			files = (
 				D2C88E23243933BB0072EAD2 /* LoginViewController.swift in Sources */,
 				D2C88E0524391A8E0072EAD2 /* AnimalsViewController.swift in Sources */,
+				D2584CCD243CED74001D1234 /* LoginViewModel.swift in Sources */,
+				D2584CC9243CDE95001D1234 /* Bearer.swift in Sources */,
 				D2C88E0124391A8E0072EAD2 /* AppDelegate.swift in Sources */,
 				D2C88E21243932950072EAD2 /* AnimalDetailViewController.swift in Sources */,
 				D2C88E2624393B930072EAD2 /* APIController.swift in Sources */,
 				D2C88E1D24392F470072EAD2 /* AnimalsViewModel.swift in Sources */,
 				D2C88E0324391A8E0072EAD2 /* SceneDelegate.swift in Sources */,
+				D2584CCB243CDED2001D1234 /* User.swift in Sources */,
 				D2C88E1F24392FD60072EAD2 /* Animal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
