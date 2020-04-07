@@ -201,13 +201,19 @@
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" textContentType="username"/>
+                                        <connections>
+                                            <action selector="textDidChange:" destination="su2-vj-h5A" eventType="editingChanged" id="vig-lJ-EG0"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dNc-Mt-pYt">
                                         <rect key="frame" x="0.0" y="42" width="382" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES" textContentType="new-password"/>
+                                        <connections>
+                                            <action selector="textDidChange:" destination="su2-vj-h5A" eventType="editingChanged" id="Otg-EK-lCB"/>
+                                        </connections>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ME-7w-ZCv">
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ME-7w-ZCv">
                                         <rect key="frame" x="40" y="84" width="302" height="50"/>
                                         <color key="backgroundColor" red="0.23999999999999999" green="0.7066666667" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>

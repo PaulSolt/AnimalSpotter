@@ -22,6 +22,15 @@ final class LoginViewModel {
         self.apiController = apiController
     }
     
+    func submit(with user: User, forLoginType loginType: LoginType, completion: @escaping (LoginResult) -> Void) {
+        switch loginType {
+        case .signUp:
+            signUp(with: user, completion: completion)
+        case .signIn:
+            signIn(with: user, completion: completion)
+        }
+    }
+    
     private func signUp(with user: User, completion: @escaping (LoginResult) -> Void) {
         apiController.signUp(with: user) { result in
             switch result {

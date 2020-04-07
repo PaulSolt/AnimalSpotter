@@ -27,6 +27,14 @@ final class AnimalsViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if viewModel.shouldPresentLoginViewController {
+            performSegue(withIdentifier: LoginViewController.identifier, sender: self)
+        }
+    }
+    
     // MARK: - Actions
     
     @IBAction func getAnimalNames(_ sender: UIBarButtonItem) {
@@ -56,6 +64,7 @@ extension AnimalsViewController {
         activityIndicator.stopAnimating()
         var snapshot = NSDiffableDataSourceSnapshot<Section, String>()
         snapshot.appendSections([.main])
+        dataSource.apply(snapshot, animatingDifferences: false)
         snapshot.appendItems(viewModel.animalNames)
         dataSource.apply(snapshot, animatingDifferences: true)
     }
