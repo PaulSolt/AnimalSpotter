@@ -33,6 +33,8 @@ final class AnimalsViewController: UIViewController {
         if viewModel.shouldPresentLoginViewController {
             performSegue(withIdentifier: LoginViewController.identifier, sender: self)
         }
+        
+        // TODO: deselect table view cell
     }
     
     // MARK: - Actions
