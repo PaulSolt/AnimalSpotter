@@ -159,6 +159,7 @@ final class APIController {
                 completion(.failure(.badData))
             }
         }
+        .resume()
     }
     
     func getAnimal(for animalName: String, completion: @escaping GetAnimalCompletion) {

@@ -34,13 +34,26 @@ final class AnimalsViewController: UIViewController {
             performSegue(withIdentifier: LoginViewController.identifier, sender: self)
         }
         
-        // TODO: deselect table view cell
+        if let indexPath = tableView.indexPathForSelectedRow {
+            tableView.deselectRow(at: indexPath, animated: animated)
+        }
     }
     
     // MARK: - Actions
     
     @IBAction func getAnimalNames(_ sender: UIBarButtonItem) {
-        
+        viewModel.getAnimalNames { [weak self] result in
+            guard let self = self else { return }
+            
+            switch result {
+            case .success:
+                self.update()
+            case .failure(let message):
+                let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default))
+                self.present(alert, animated: true)
+            }
+        }
     }
 }
 
