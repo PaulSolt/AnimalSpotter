@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D25048BA243E46D50015D2DE /* AnimalDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25048B9243E46D50015D2DE /* AnimalDetailViewModel.swift */; };
 		D2584CC9243CDE95001D1234 /* Bearer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2584CC8243CDE95001D1234 /* Bearer.swift */; };
 		D2584CCB243CDED2001D1234 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2584CCA243CDED2001D1234 /* User.swift */; };
 		D2584CCD243CED74001D1234 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2584CCC243CED74001D1234 /* LoginViewModel.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D25048B9243E46D50015D2DE /* AnimalDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailViewModel.swift; sourceTree = "<group>"; };
 		D2584CC8243CDE95001D1234 /* Bearer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bearer.swift; sourceTree = "<group>"; };
 		D2584CCA243CDED2001D1234 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D2584CCC243CED74001D1234 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			children = (
 				D2C88E1C24392F470072EAD2 /* AnimalsViewModel.swift */,
 				D2584CCC243CED74001D1234 /* LoginViewModel.swift */,
+				D25048B9243E46D50015D2DE /* AnimalDetailViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				D2C88E23243933BB0072EAD2 /* LoginViewController.swift in Sources */,
 				D2C88E0524391A8E0072EAD2 /* AnimalsViewController.swift in Sources */,
 				D2584CCD243CED74001D1234 /* LoginViewModel.swift in Sources */,
+				D25048BA243E46D50015D2DE /* AnimalDetailViewModel.swift in Sources */,
 				D2584CC9243CDE95001D1234 /* Bearer.swift in Sources */,
 				D2C88E0124391A8E0072EAD2 /* AppDelegate.swift in Sources */,
 				D2C88E21243932950072EAD2 /* AnimalDetailViewController.swift in Sources */,

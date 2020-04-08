@@ -39,6 +39,15 @@ final class AnimalsViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let controller = segue.destination as? AnimalDetailViewController,
+            let indexPath = tableView.indexPathForSelectedRow
+            else { return }
+        
+        let animalName = viewModel.animalNames[indexPath.row]
+        controller.animalName = animalName
+    }
+    
     // MARK: - Actions
     
     @IBAction func getAnimalNames(_ sender: UIBarButtonItem) {
